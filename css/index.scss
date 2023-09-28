@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Maven+Pro&family=Oxygen:wght@300&family=Roboto&display=swap");
+
+//font variable
+$font_main: "Roboto", sans-serif;
+
+//colour variables
+$background_dark_grey: #6e6e6e;
+$modal_light_grey: #b3b3b3;
+$modal_text_grey: #4d4d4d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background_dark_grey;
+  font-family: $font_main;
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    background-color: $modal_light_grey;
+    color: $modal_text_grey;
+    padding: 20px;
+
+    .tick-icon {
+      width: 25px;
+      height: 25px;
+      background-image: url("../assets/check.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin: 0 10px 5px 0;
+      vertical-align: middle;
+    }
+  }
+}

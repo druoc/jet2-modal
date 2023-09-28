@@ -3,16 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Jet2 Modal</title>
   </head>
   <body>
     <!--Trigger button-->
-    <button class="modal-btn-1" data-modal-target="modal1">View Modal</button>
+    <button class="modal-trigger-btn" data-modal-target="modal1">
+      View Modal
+    </button>
     <!--Modal-->
+    <div class="modal" id="modal1">
+      <div class="modal__content">
+        <h3>
+          <span class="tick-icon"></span>
+          Congratulations your Jet2 holiday booking has been confirmed
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+          quibusdam? Ullam eveniet voluptatem ea architecto, alias sint
+          distinctio repellendus, voluptates sapiente blanditiis minima, at
+          possimus ipsam. Ipsum earum aperiam a.
+        </p>
+        <div class="modal__buttons">
+          <button>Cancel</button>
+          <button>Continue</button>
+        </div>
+      </div>
+    </div>
 
     <script src="js/index.js"></script>
-    <script src="js/modal.js"></script>
   </body>
 </html>
