@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Maven+Pro&family=Oxygen:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 //font variable
 $font_main: "Roboto", sans-serif;
@@ -7,8 +7,12 @@ $font_main: "Roboto", sans-serif;
 $background_dark_grey: #6e6e6e;
 $modal_light_grey: #b3b3b3;
 $modal_text_grey: #4d4d4d;
+$modal_text_light_grey: #737373;
+$modal_button_colour_bottom: #04031c;
+$text_white: #fff;
 
-* {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,13 +28,16 @@ body {
   bottom: 0;
   width: 100%;
   height: 70%;
-  align-items: center;
-  justify-content: center;
 
   &__content {
     background-color: $modal_light_grey;
     color: $modal_text_grey;
     padding: 20px;
+
+    &-header {
+      text-align: center;
+      color: $modal_button_colour_bottom;
+    }
 
     .tick-icon {
       width: 25px;
@@ -42,5 +49,46 @@ body {
       margin: 0 10px 5px 0;
       vertical-align: middle;
     }
+    &-text {
+      margin-top: 15px;
+      padding: 0 18px 0 10px;
+      font-size: 0.9em;
+      color: $modal_text_light_grey;
+      font-weight: 200;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $modal_light_grey;
+    height: 15vh;
+
+    button {
+      width: 70%;
+      height: 40px;
+      margin: 2px auto;
+      text-align: center;
+      padding: 10px;
+      font-size: 1em;
+      font-weight: bolder;
+      font-style: italic;
+      border-radius: 5px;
+    }
+
+    &-top {
+      background-color: $modal_light_grey;
+      color: $modal_text_light_grey;
+    }
+    &-bottom {
+      background-color: $modal_button_colour_bottom;
+      color: $text_white;
+      border: none;
+    }
+  }
+  &__divider {
+    width: 100%;
+    height: 1px;
+    background-color: $modal_text_light_grey;
   }
 }

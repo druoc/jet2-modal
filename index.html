@@ -8,27 +8,28 @@
   </head>
   <body>
     <!--Trigger button-->
-    <button class="modal-trigger-btn" data-modal-target="modal1">
+    <button class="modal-trigger-btn">
       View Modal
     </button>
     <!--Modal-->
     <div class="modal" id="modal1">
       <div class="modal__content">
-        <h3>
+        <h3 class="modal__content-header">
           <span class="tick-icon"></span>
           Congratulations your Jet2 holiday booking has been confirmed
         </h3>
-        <p>
+        <p class="modal__content-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
           quibusdam? Ullam eveniet voluptatem ea architecto, alias sint
           distinctio repellendus, voluptates sapiente blanditiis minima, at
           possimus ipsam. Ipsum earum aperiam a.
         </p>
-        <div class="modal__buttons">
-          <button>Cancel</button>
-          <button>Continue</button>
-        </div>
       </div>
+      <div class="modal__divider"></div>
+        <div class="modal__buttons">
+          <button class="modal__buttons-top">Cancel</button>
+          <button class="modal__buttons-bottom">Continue</button>
+        
     </div>
 
     <script src="js/index.js"></script>
