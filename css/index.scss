@@ -23,8 +23,10 @@ body {
   font-family: $font_main;
 }
 
-.modal {
+.modal.hidden {
   display: none;
+}
+.modal {
   position: fixed;
   bottom: 0;
   width: 100%;
