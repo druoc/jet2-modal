@@ -1,4 +1,4 @@
-##INSTRUCTIONS
+## INSTRUCTIONS
 
 - Clone this repository by clicking the green 'code' button at the top of this screen
 - Copy the URL
