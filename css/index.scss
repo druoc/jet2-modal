@@ -4,11 +4,11 @@
 $font_main: "Roboto", sans-serif;
 
 //colour variables
-$background_dark_grey: #6e6e6e;
-$modal_light_grey: #b3b3b3;
+$background_dark_grey: #636f79;
+$modal_light_grey: #f2f2f2;
 $modal_text_grey: #4d4d4d;
 $modal_text_light_grey: #737373;
-$modal_button_colour_bottom: #04031c;
+$modal_button_colour_bottom: #203240;
 $text_white: #fff;
 
 body,
@@ -72,7 +72,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 410px;
+  height: 425px;
 
   &__content {
     background-color: $modal_light_grey;
@@ -127,11 +127,11 @@ body {
       cursor: pointer;
     }
 
-    &-top {
+    &-cancel {
       background-color: $modal_light_grey;
       color: $modal_text_light_grey;
     }
-    &-bottom {
+    &-continue {
       background-color: $modal_button_colour_bottom;
       color: $text_white;
       border: none;

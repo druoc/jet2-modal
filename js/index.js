@@ -3,9 +3,9 @@ then sets the modal-trigger-button and modal to variables,
 then adds an event listener to the button to make the modal appear when clicked*/
 document.addEventListener("DOMContentLoaded", () => {
   const modalTriggerBtn = document.querySelector(".modal-trigger-btn");
-  const modalCancelBtn = document.querySelector(".modal__buttons-top");
+  const modalCancelBtn = document.querySelector(".modal__buttons-cancel");
   const modal = document.querySelector(".modal");
-  const continueBtn = document.querySelector("#continue-btn");
+  const continueBtn = document.querySelector(".modal__buttons-continue");
 
   let originalDisplay = "";
 
