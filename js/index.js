@@ -1,5 +1,5 @@
 /*waits till the full document has loaded, 
-then sets the modal-trigger-button and modal to variables, 
+then sets the buttons and modal to variables, 
 then adds an event listener and function to the relevant buttons*/
 document.addEventListener("DOMContentLoaded", () => {
   const modalTriggerBtn = document.querySelector(".modal-trigger-btn");
