@@ -24,19 +24,21 @@ body {
 }
 
 .modal {
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 70%;
+  height: 410px;
 
   &__content {
     background-color: $modal_light_grey;
     color: $modal_text_grey;
-    padding: 20px;
+    padding: 30px 20px 30px 20px;
 
     &-header {
       text-align: center;
       color: $modal_button_colour_bottom;
+      margin-bottom: 5px;
     }
 
     .tick-icon {
@@ -62,7 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $modal_light_grey;
-    height: 15vh;
+    height: 18vh;
 
     button {
       width: 70%;
@@ -79,11 +81,13 @@ body {
     &-top {
       background-color: $modal_light_grey;
       color: $modal_text_light_grey;
+      margin-top: 10px;
     }
     &-bottom {
       background-color: $modal_button_colour_bottom;
       color: $text_white;
       border: none;
+      margin-bottom: 10px;
     }
   }
   &__divider {
