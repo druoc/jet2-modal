@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalTriggerBtn = document.querySelector(".modal-trigger-btn");
   const modalCancelBtn = document.querySelector(".modal__buttons-top");
   const modal = document.querySelector(".modal");
+  const continueBtn = document.querySelector("#continue-btn");
 
   let originalDisplay = "";
 
@@ -17,5 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
   modalCancelBtn.addEventListener("click", () => {
     modalTriggerBtn.style.display = originalDisplay;
     modal.classList.add("hidden");
+  });
+
+  continueBtn.addEventListener("click", () => {
+    window.location.href = "https://www.jet2holidays.com";
   });
 });

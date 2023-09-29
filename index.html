@@ -8,9 +8,12 @@
   </head>
   <body>
     <!--Trigger button-->
-    <button class="modal-trigger-btn" data-modal-target="modal1">
-      View Modal
-    </button>
+    <div class="modal-trigger-container">
+      <button class="modal-trigger-btn">
+        View Modal
+      </button>
+    </div>
+    
     <!--Modal-->
     <div class="modal hidden" id="modal1">
       <div class="modal__content">
@@ -28,7 +31,7 @@
       <div class="modal__divider"></div>
         <div class="modal__buttons">
           <button class="modal__buttons-top">Cancel</button>
-          <button class="modal__buttons-bottom">Continue</button>
+          <button class="modal__buttons-bottom" id="continue-btn">Continue</button>
         
     </div>
 

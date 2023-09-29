@@ -23,6 +23,48 @@ body {
   font-family: $font_main;
 }
 
+@media screen and (min-width: 769px) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70% !important;
+
+    .modal__buttons {
+      height: 8vh;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 20%;
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+.modal-trigger-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-trigger-btn {
+  width: 40vw;
+  height: 10vh;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.modal-trigger-btn:hover {
+  cursor: pointer;
+}
+
 .modal.hidden {
   display: none;
 }
@@ -67,11 +109,12 @@ body {
     flex-direction: column;
     background-color: $modal_light_grey;
     height: 18vh;
+    justify-content: center;
 
     button {
       width: 70%;
       height: 40px;
-      margin: 2px auto;
+      margin: 3px auto;
       text-align: center;
       padding: 10px;
       font-size: 1em;
@@ -80,16 +123,18 @@ body {
       border-radius: 5px;
     }
 
+    button:hover {
+      cursor: pointer;
+    }
+
     &-top {
       background-color: $modal_light_grey;
       color: $modal_text_light_grey;
-      margin-top: 10px;
     }
     &-bottom {
       background-color: $modal_button_colour_bottom;
       color: $text_white;
       border: none;
-      margin-bottom: 10px;
     }
   }
   &__divider {
